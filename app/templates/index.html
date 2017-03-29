@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+        <h1>Tic-Tac-Toe</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.name.label }}: {{ form.name() }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br>
+            {{ form.submit() }}
+        </form>
+    </body>
+</html>
